@@ -7,7 +7,7 @@ const authRoutes = require("./routes/authentication")
 app.use(express.json())
 
 app.use(authRoutes)
-app.use(userRoutes)
+app.use("/users", userRoutes)
 
 app.use((error, request, response, next) => {
   console.error(error.message)

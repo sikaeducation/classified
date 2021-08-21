@@ -1,7 +1,7 @@
 const { Router } = require("express")
 const router = Router()
 
-router.get("/login", async (request, response) => {
+router.post("/login", async (request, response) => {
   response.json({
     message: "You're logged in!",
   })

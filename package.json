@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "reset": "rm dev.db && knex migrate:latest && knex seed:run"
   },
   "dependencies": {
     "express": "^4.17.1",
